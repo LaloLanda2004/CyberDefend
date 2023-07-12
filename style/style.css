@@ -35,6 +35,10 @@ body{
     /* border: 2px solid #f00; */
 }
 
+#especial_mobile{
+    display: none;
+}
+
 #especial{
     font-size: 60px;
     position: relative;
@@ -42,6 +46,22 @@ body{
     z-index: 1;
     color: #fff;
     /* margin-bottom: 20px; */
+}
+
+.fa-arrow-down-long{
+    font-size: 32px;
+}
+
+#ar-1{
+    position: absolute;
+    top: 93vh;
+    left: 2%;
+}
+
+#ar-2{
+    position: absolute;
+    top: 93vh;
+    right: 2%;
 }
 
 /*! CONTENIDO */
@@ -64,6 +84,10 @@ main{
 img{
     width: 800px;
     height: 500px;
+}
+
+#img_mobile{
+    display: none;
 }
 
 span{
@@ -133,21 +157,8 @@ h2{
     margin-top: 25px;
 }
 
-.fa-arrow-down-long{
-    font-size: 32px;
-}
 
-#ar-1{
-    position: absolute;
-    top: 93vh;
-    left: 2%;
-}
-
-#ar-2{
-    position: absolute;
-    top: 93vh;
-    right: 2%;
-}
+/*! BARRA DE SCROLL */
 
 body::-webkit-scrollbar{
     /* display: none; */
@@ -171,10 +182,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /*! HERRAMIENTAS */
-
-.pswd-tool{
-    margin-top: 15px;
-}
 
 .under-container{
     display: flex;
@@ -223,11 +230,8 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 50px;
-    border-radius: 10px;
-    background-color: #303030;
-    color: #fff;
+    /* width: 100%;
+    height: 50px; */
     margin: 0 0 60px 0;
     /* border: #f00 solid 2px; */
 }
@@ -249,5 +253,120 @@ input{
 .down-side button:active{
     background-color: #4b4a4a;
     cursor: pointer;
+}
+
+@media screen and (max-width: 320px){
+    #wallpaper{
+        height: 95vh;
+    }
+
+    #obj{
+        width: 250px;
+        height: 170px;
+    }
+
+    #especial{
+        font-size: 30px;
+        display: none;
+    }
+
+    #especial_mobile{
+        display: block;
+        font-size: 30px;
+        position: relative;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        z-index: 1;
+        color: #fff;
+    }
+    
+    #ar-1{
+        position: absolute;
+        top: 87vh;
+        left: 2%;
+    }
+    
+    #ar-2{
+        position: absolute;
+        top: 87vh;
+        right: 2%;
+    }
+
+    .container{
+        flex-direction: column;
+        padding: 10px 20px 30px 20px;
+    }
+
+    main .container:first-child{
+        padding: 60px 20px 30px 20px;
+    }
+
+    img{
+        width: 100%;
+        height: 250px;
+    }
+
+    span{
+        font-size: 22px;
+    }
+
+    .info_2{
+        text-align: left;
+    }
+
+    .info p{
+        font-size: 16px;
+    }
+
+    .info_2 p{
+        font-size: 16px;
+        /* text-align: left; */
+    }
+
+    #img_web{
+        display: none;
+    }
+
+    #img_mobile{
+        display: block;
+    }
+
+    .footer{
+        padding: 40px 20px 40px 20px;
+    }
+
+    .footer p{
+        font-size: 16px;
+    }
+
+    .footer p:nth-child(2){
+        margin-top: 10px;
+    }
+
+    #pswd-tool{
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .under-container{
+        justify-content: center;
+    }
+
+    .tools{
+        width: auto;
+        font-size: 18px;
+    }
+
+    .down-side button{
+        font-size: 30px;
+    }
+
+    input{
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .passwrd-cont{
+        margin: 0 0 40px 0;
+    }
 }
 

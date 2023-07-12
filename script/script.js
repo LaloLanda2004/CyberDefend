@@ -3,8 +3,7 @@
 let obj = document.getElementById("obj");
 let word = document.getElementById("especial");
 let wallpaper = document.getElementById("wallpaper");
-let ar_1 = document.getElementById("ar-1");
-let ar_2 = document.getElementById("ar-2");
+let word_mobile = document.getElementById("especial_mobile")
 
 
 // let test = word.style.color = "transparent";
@@ -21,7 +20,8 @@ window.addEventListener("scroll", function(){
     // obj.style.height = value * 1.3 + "px";
     // word.style.top = value * .7 + 'px';
     
-
+    word_mobile.style.marginTop = value * 0.37 + "px";
+    word_mobile.style.top = value * 0.2 + "px";
     word.style.top = value * 0.2 + "px";
     word.style.marginTop = value * 0.34 + "px";
     // word.style.color = "transparent";
